@@ -1,0 +1,82 @@
+@import '../../styles/utils/mixin';
+@import '../../styles/utils/variables';
+
+.registrPage {
+  margin: 20px 0;
+}
+
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  // max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: $white-color;
+}
+
+.registration__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.registration__error {
+  color: #d9534f;
+}
+
+.registration__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.registration__input {
+  padding: 0.5rem 1rem;
+  border: 1px solid $secondary-text-color;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.registration__button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: none;
+  background-color: $second-main-color;
+  color: $white-color;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registration__button:hover {
+  background-color: $secondary-text-color;
+}
+
+.registration__text {
+  margin-top: 1.5rem;
+  text-align: center;
+
+  &--settings {
+    font-size: small;
+  }
+}
+
+.registration__link {
+  color: $main-text-color;
+  text-decoration: none;
+  font-weight: 600;
+
+  &--next {
+    color: $secondary-text-color;
+  }
+}
+
+.registration__link:hover {
+  color: $main-text-color;
+}

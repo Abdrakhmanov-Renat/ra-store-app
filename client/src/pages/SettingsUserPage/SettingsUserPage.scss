@@ -1,0 +1,70 @@
+@import '../../styles/utils/mixin';
+@import '../../styles/utils/variables';
+
+.settingspage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: $white-color;
+  }
+
+  &__button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+    border: none;
+    background-color: $second-main-color;
+    color: $white-color;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $secondary-text-color;
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  &__input {
+    padding: 0.5rem 1rem;
+    border: 1px solid $secondary-text-color;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  &__form-button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+    border: none;
+    background-color: $main-text-color;
+    color: $white-color;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $secondary-text-color;
+    }
+  }
+}

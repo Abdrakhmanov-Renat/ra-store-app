@@ -1,0 +1,74 @@
+@import '../../styles/utils/mixin';
+@import '../../styles/utils/variables';
+
+.user-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  background-color: $white-color;
+
+  &__title {
+    color: $main-text-color;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+
+  &__button {
+    display: block;
+    padding: 0.75rem 1rem;
+    border: 1px solid $elements-gray-color;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    &.login {
+      background-color: $white-color;
+      color: $second-main-color;
+
+      &:hover {
+        background-color: $hover-bg-color;
+      }
+    }
+
+    &.signup {
+      background-color: $second-main-color;
+      color: $white-color;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    &.logout {
+      background-color: $red-color;
+      color: $white-color;
+      border: none;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    &.settings {
+      background-color: $second-main-color;
+      color: $white-color;
+      border: none;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

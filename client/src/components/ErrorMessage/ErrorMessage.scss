@@ -1,0 +1,53 @@
+@import '../../styles/utils/mixin';
+@import '../../styles/utils/variables';
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffecec;
+  color: #d9534f;
+  text-align: center;
+  border: 1px solid #d9534f;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  font-family: Mont-BOLD, sans-serif;
+  font-size: 14px;
+
+  @include on-tablet {
+    font-size: 11px;
+    padding: 10px;
+  }
+
+  @include on-mobile {
+    font-size: 9px;
+    padding: 8px;
+  }
+
+  &__button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: Mont-BOLD, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #c9302c;
+    }
+
+    @include on-tablet {
+      font-size: 11px;
+      padding: 10px 15px;
+    }
+
+    @include on-mobile {
+      font-size: 10px;
+      padding: 10px;
+    }
+  }
+}
